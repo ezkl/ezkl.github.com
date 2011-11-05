@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Ezekiel Templin's Blog</title>
+  <title>About Me - Ezekiel Templin's Blog</title>
   <meta name="author" content="Ezekiel Templin">
 
   
-  <meta name="description" content="Blog Archive 2011 First!
-Nov 05 2011 Recent Posts First! Github Repos Status updating... @ezkl on Github $.domReady(function(){ if (!window.jXHR){ &hellip;">
+  <meta name="description" content="About Me class EzekielTemplin def initialize @birthdate = Date.parse('1983-06-29') @birthplace = &quot;Saegertown, PA&quot; @gender = &quot;male& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Nov 05 2011 Recent Posts First! Github Repos Status updating... @ezkl on Github 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://zeke.templ.in/blog/archives">
+  <link rel="canonical" href="http://zeke.templ.in/about">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -64,27 +63,58 @@ Nov 05 2011 Recent Posts First! Github Repos Status updating... @ezkl on Github 
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    <h1 class="entry-title">About Me</h1>
     
   </header>
   
-  <div id="blog-archives">
+  <div><script src='https://gist.github.com/1341104.js?file='></script>
+<noscript><pre><code>class EzekielTemplin
+  def initialize
+    @birthdate  = Date.parse('1983-06-29')
+    @birthplace = &quot;Saegertown, PA&quot;
+    @gender     = &quot;male&quot;
+  end
+  
+  def age
+    Date.today.year - @birthdate.year
+  end
+  
+  def locations
+    [@birthplace, &quot;Audubon, PA&quot;, &quot;Guys Mills, PA&quot;, &quot;Philadelphia, PA&quot;, current_location]
+  end
+  
+  def current_location
+    &quot;Meadville, PA&quot;
+  end
+  
+  def jobs
+    [ { :company    =&gt; &quot;Semantic Leap&quot;,
+        :url        =&gt; &quot;N/A&quot;,
+        :title      =&gt; &quot;Founder&quot;,
+        :start_date =&gt; Date.parse('2006-09-01') } ].push current_job
+  end
+  
+  def current_job
+    { :company    =&gt; &quot;IP Services, Inc&quot;,
+      :url        =&gt; &quot;http://www.ipservicesinc.com/&quot;,
+      :title      =&gt; &quot;Software Developer&quot;,
+      :start_date =&gt; Date.parse('2010-05-01') }
+  end
+  
+  def bored?
+    &quot;Bored enough to write a bio in Ruby!&quot;
+  end
+end
+</code></pre></noscript></div>
+
 
 
 
   
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/11/05/first/">First!</a></h1>
-<time datetime="2011-11-05T00:35:00-04:00" pubdate><span class='month'>Nov</span> <span class='day'>05</span> <span class='year'>2011</span></time>
-
-
-</article>
-
-</div>
-
+    <footer>
+      
+      
+    </footer>
   
 </article>
 
@@ -193,19 +223,6 @@ Nov 05 2011 Recent Posts First! Github Repos Status updating... @ezkl on Github 
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'zeketemplin';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

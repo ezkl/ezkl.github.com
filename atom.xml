@@ -1,16 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://ezkl.github.com/atom.xml" rel="self"/>
-  <link href="http://ezkl.github.com/"/>
-  <updated>2011-11-04T23:09:24-04:00</updated>
-  <id>http://ezkl.github.com/</id>
+  <title><![CDATA[Ezekiel Templin's Blog]]></title>
+  <link href="http://zeke.templ.in/atom.xml" rel="self"/>
+  <link href="http://zeke.templ.in/"/>
+  <updated>2011-11-05T00:37:13-04:00</updated>
+  <id>http://zeke.templ.in/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Ezekiel Templin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First!]]></title>
+    <link href="http://zeke.templ.in/blog/2011/11/05/first/"/>
+    <updated>2011-11-05T00:35:00-04:00</updated>
+    <id>http://zeke.templ.in/blog/2011/11/05/first</id>
+    <content type="html"><![CDATA[<p>&#8230; and hopefully not the last.</p>
+
+<div><script src='https://gist.github.com/1341104.js?file='></script>
+<noscript><pre><code>class EzekielTemplin
+  def initialize
+    @birthdate  = Date.parse('1983-06-29')
+    @birthplace = &quot;Saegertown, PA&quot;
+    @gender     = &quot;male&quot;
+  end
+  
+  def age
+    Date.today.year - @birthdate.year
+  end
+  
+  def locations
+    [@birthplace, &quot;Audubon, PA&quot;, &quot;Guys Mills, PA&quot;, &quot;Philadelphia, PA&quot;, current_location]
+  end
+  
+  def current_location
+    &quot;Meadville, PA&quot;
+  end
+  
+  def jobs
+    [ { :company    =&gt; &quot;Semantic Leap&quot;,
+        :url        =&gt; &quot;N/A&quot;,
+        :title      =&gt; &quot;Founder&quot;,
+        :start_date =&gt; Date.parse('2006-09-01') } ].push current_job
+  end
+  
+  def current_job
+    { :company    =&gt; &quot;IP Services, Inc&quot;,
+      :url        =&gt; &quot;http://www.ipservicesinc.com/&quot;,
+      :title      =&gt; &quot;Software Developer&quot;,
+      :start_date =&gt; Date.parse('2010-05-01') }
+  end
+  
+  def bored?
+    &quot;Bored enough to write a bio in Ruby!&quot;
+  end
+end
+</code></pre></noscript></div>
+
+]]></content>
+  </entry>
   
 </feed>
