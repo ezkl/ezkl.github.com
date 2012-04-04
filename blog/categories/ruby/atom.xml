@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ezekiel Templin's Blog]]></title>
   <link href="http://zeke.templ.in/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://zeke.templ.in/"/>
-  <updated>2012-04-04T11:09:35-04:00</updated>
+  <updated>2012-04-04T15:04:55-04:00</updated>
   <id>http://zeke.templ.in/</id>
   <author>
     <name><![CDATA[Ezekiel Templin]]></name>
@@ -25,6 +25,8 @@ heroku config:add RUBY_VERSION=ruby-1.9.3-p125
 heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
 </code></pre></noscript></div>
 </p>
+
+<p>Thanks to <a href="https://github.com/agraves">agraves</a> for pointing out that the new environment isn't used until your next deploy.</p>
 ]]></content>
   </entry>
   
