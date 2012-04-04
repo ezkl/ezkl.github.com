@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: heroku | Ezekiel Templin's Blog]]></title>
+  <link href="http://zeke.templ.in/blog/categories/heroku/atom.xml" rel="self"/>
+  <link href="http://zeke.templ.in/"/>
+  <updated>2012-04-04T11:07:45-04:00</updated>
+  <id>http://zeke.templ.in/</id>
+  <author>
+    <name><![CDATA[Ezekiel Templin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Running Ruby 1.9.3-p125 on Heroku]]></title>
+    <link href="http://zeke.templ.in/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/"/>
+    <updated>2012-04-04T11:00:00-04:00</updated>
+    <id>http://zeke.templ.in/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku</id>
+    <content type="html"><![CDATA[<p>If you're running the Cedar stack, setting up your app's Heroku environment to run Ruby 1.9.3-p125 is easy. From within the application directory:
+<div><script src='https://gist.github.com/2302345.js?file='></script>
+<noscript><pre><code>heroku labs:enable user_env_compile
+heroku config:add RUBY_VERSION=ruby-1.9.3-p125
+heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
+</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

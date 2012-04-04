@@ -9,7 +9,7 @@
   <meta name="author" content="Ezekiel Templin">
 
   
-  <meta name="description" content="&#8230; and hopefully not the last. class EzekielTemplin def initialize @birthdate = Date.parse('1983-06-29') @birthplace = &quot;Saegertown, PA&quot &hellip;">
+  <meta name="description" content="If you&#8217;re running the Cedar stack, setting up your app&#8217;s Heroku environment to run Ruby 1.9.3-p125 is easy. From within the application &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/">Running Ruby 1.9.3-p125 on Heroku</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-04T11:00:00-04:00" pubdate data-updated="true">Apr 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you&#8217;re running the Cedar stack, setting up your app&#8217;s Heroku environment to run Ruby 1.9.3-p125 is easy. From within the application directory:</p>
+
+<div><script src='https://gist.github.com/2302345.js?file='></script>
+<noscript><pre><code>heroku labs:enable user_env_compile
+heroku config:add RUBY_VERSION=ruby-1.9.3-p125
+heroku config:add PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
+</code></pre></noscript></div>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -164,6 +209,10 @@ end
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/">Running Ruby 1.9.3-p125 on Heroku</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2011/11/05/first/">First!</a>
       </li>
     
@@ -253,7 +302,7 @@ end
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2011 - Ezekiel Templin -
+  Copyright &copy; 2012 - Ezekiel Templin -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
