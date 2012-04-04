@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ezekiel Templin's Blog]]></title>
   <link href="http://zeke.templ.in/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://zeke.templ.in/"/>
-  <updated>2012-04-04T11:07:45-04:00</updated>
+  <updated>2012-04-04T11:09:35-04:00</updated>
   <id>http://zeke.templ.in/</id>
   <author>
     <name><![CDATA[Ezekiel Templin]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Running Ruby 1.9.3-p125 on Heroku]]></title>
+    <title type="html"><![CDATA[Ruby 1.9.3-p125 on Heroku]]></title>
     <link href="http://zeke.templ.in/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/"/>
     <updated>2012-04-04T11:00:00-04:00</updated>
     <id>http://zeke.templ.in/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku</id>
