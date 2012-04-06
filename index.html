@@ -9,7 +9,7 @@
   <meta name="author" content="Ezekiel Templin">
 
   
-  <meta name="description" content="If you&#8217;re running the Cedar stack, setting up your app&#8217;s Heroku environment to run Ruby 1.9.3-p125 is easy. From within the application &hellip;">
+  <meta name="description" content="I use TextMate to write my git commit messages. I also use (and love) the iTerm2 Hotkey/Visor window. For the past few months, after saving and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/06/git_textmate_and_iterm2_sessions/">Git, TextMate, and iTerm2 Sessions</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-06T10:41:00-04:00" pubdate data-updated="true">Apr 6<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I use TextMate to write my git commit messages. I also use (and love) the iTerm2 Hotkey/Visor window. For the past few months, after saving and closing the commit in TextMate, a new iTerm2 session would launch.</p>
+
+<p>This new session <strong>looked</strong> like a hotkey window, but didn&#8217;t behave like one and effectively masked the actual Visor. If you&#8217;re reading this, you&#8217;ve likely experienced this issue, so you know how annoying it can become during a long work session.</p>
+
+<p>Fortuantely, <a href="http://code.google.com/p/iterm2/issues/detail?id=956#c2">the solution</a> to this problem was posted nearly a year ago by TextMate creator Allan Ossgard in response to an issue on iTerm2&#8217;s <a href="http://code.google.com/p/iterm2/">Google Project page</a>:</p>
+
+<blockquote><p>It uses GetFrontProcess() when initially invoked and then SetFrontProcess() with the obtained process serial number when it is time to return focus to the terminal.</p>
+
+<p>I suggest the user &#8230; reset the launch services database: <code>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill</code></p></blockquote>
+
+<p>This worked for me. I hope it works for you too.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -207,6 +253,10 @@ end
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/06/git_textmate_and_iterm2_sessions/">Git, TextMate, and iTerm2 Sessions</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/">Ruby 1.9.3-p125 on Heroku</a>

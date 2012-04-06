@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Ezekiel Templin's Blog</title>
+  <title>Git, TextMate, and iTerm2 Sessions - Ezekiel Templin's Blog</title>
   <meta name="author" content="Ezekiel Templin">
 
   
-  <meta name="description" content="Blog Archive 2012 Git, TextMate, and iTerm2 Sessions
-Apr 06 2012 posted in git, iterm, textmate Ruby 1.9.3-p125 on Heroku
-Apr 04 2012 posted in &hellip;">
+  <meta name="description" content="I use TextMate to write my git commit messages. I also use (and love) the iTerm2 Hotkey/Visor window. For the past few months, after saving and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Apr 04 2012 posted in &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://zeke.templ.in/blog/archives">
+  <link rel="canonical" href="http://zeke.templ.in/blog/2012/04/06/git_textmate_and_iterm2_sessions">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,63 +72,105 @@ Apr 04 2012 posted in &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Git, TextMate, and iTerm2 Sessions</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-06T10:41:00-04:00" pubdate data-updated="true">Apr 6<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>I use TextMate to write my git commit messages. I also use (and love) the iTerm2 Hotkey/Visor window. For the past few months, after saving and closing the commit in TextMate, a new iTerm2 session would launch.</p>
 
-  
-  <h2>2012</h2>
+<p>This new session <strong>looked</strong> like a hotkey window, but didn&#8217;t behave like one and effectively masked the actual Visor. If you&#8217;re reading this, you&#8217;ve likely experienced this issue, so you know how annoying it can become during a long work session.</p>
 
-<article>
-  
-<h1><a href="/blog/2012/04/06/git_textmate_and_iterm2_sessions/">Git, TextMate, and iTerm2 Sessions</a></h1>
-<time datetime="2012-04-06T10:41:00-04:00" pubdate><span class='month'>Apr</span> <span class='day'>06</span> <span class='year'>2012</span></time>
+<p>Fortuantely, <a href="http://code.google.com/p/iterm2/issues/detail?id=956#c2">the solution</a> to this problem was posted nearly a year ago by TextMate creator Allan Ossgard in response to an issue on iTerm2&#8217;s <a href="http://code.google.com/p/iterm2/">Google Project page</a>:</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/iterm/'>iterm</a>, <a class='category' href='/blog/categories/textmate/'>textmate</a></span>
-</footer>
+<blockquote><p>It uses GetFrontProcess() when initially invoked and then SetFrontProcess() with the obtained process serial number when it is time to return focus to the terminal.</p>
 
+<p>I suggest the user &#8230; reset the launch services database: <code>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill</code></p></blockquote>
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/">Ruby 1.9.3-p125 on Heroku</a></h1>
-<time datetime="2012-04-04T11:00:00-04:00" pubdate><span class='month'>Apr</span> <span class='day'>04</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/heroku/'>heroku</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/11/05/first/">First!</a></h1>
-<time datetime="2011-11-05T00:35:00-04:00" pubdate><span class='month'>Nov</span> <span class='day'>05</span> <span class='year'>2011</span></time>
-
-
-</article>
-
+<p>This worked for me. I hope it works for you too.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ezekiel Templin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-06T10:41:00-04:00" pubdate data-updated="true">Apr 6<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/iterm/'>iterm</a>, <a class='category' href='/blog/categories/textmate/'>textmate</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zeke.templ.in/blog/2012/04/06/git_textmate_and_iterm2_sessions/" data-via="ezkl" data-counturl="http://zeke.templ.in/blog/2012/04/06/git_textmate_and_iterm2_sessions/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/04/running-ruby-1-dot-9-3-p125-on-heroku/" title="Previous Post: Ruby 1.9.3-p125 on Heroku">&laquo; Ruby 1.9.3-p125 on Heroku</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -250,7 +290,10 @@ Apr 04 2012 posted in &hellip;">
       var disqus_shortname = 'zeketemplin';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zeke.templ.in/blog/2012/04/06/git_textmate_and_iterm2_sessions/';
+        var disqus_url = 'http://zeke.templ.in/blog/2012/04/06/git_textmate_and_iterm2_sessions/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
